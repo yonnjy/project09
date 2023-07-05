@@ -28,6 +28,30 @@ $(function () {
         slidesToScroll: 3,
     });
 
+    $('.prem_slide').slick({
+        arrows: false,
+        dots: true,
+        centerMode: true,
+    });
+    
+    $('.prem_list li').on('click', function (event) {
+        event.preventDefault();
+
+        let idx = $(this).index();
+        $(this).addClass('on')
+            .siblings().removeClass('on');
+
+        $('.prem_wrap .prem_box').eq(idx).addClass('on')
+            .siblings().removeClass('on');
+    });
+
+    $('.main_prem .arrows .left').on('click', function () {
+        $('.prem_slide').slick('slickPrev');
+    });
+    $('.main_prem .arrows .right').on('click', function () {
+        $('.prem_slide').slick('slickNext');
+    });
+
     $('.btn_list .to_top').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 500);
     });
