@@ -59,7 +59,12 @@ p {
 .footer .st {
     font-size: 15px;
     font-weight: 500;
-    color: #eee;
+    color: #444;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .slick-track,
