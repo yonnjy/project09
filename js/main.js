@@ -22,8 +22,14 @@ $(function () {
 
     $('.trend_slide').slick({
         arrows: false,
+        dots: true,
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
     });
+
+    $('.btn_list .to_top').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 500);
+    });
+    
 });
