@@ -52,6 +52,11 @@ $(function () {
         $('.prem_slide').slick('slickNext');
     });
 
+    $('.family_site span').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggleClass('on');
+    })
+
     $('.btn_list .to_top').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 500);
     });
