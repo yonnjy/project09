@@ -293,63 +293,7 @@
     cursor: pointer;
 }
 
-/* main_trending_now */
-
-.main_trend .trend_slide {
-    margin: 0 -15px;
-}
-
-.main_trend .trend_slide figure {
-    padding: 0 15px 60px 15px;
-    text-align: center;
-}
-
-.main_trend .trend_slide .img_box {
-    margin: 0 0 20px 0;
-}
-
-.main_trend .trend_slide strong {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.main_trend .trend_slide .slick-dots {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.main_trend .trend_slide .slick-dots>li {
-    display: inline-block;
-}
-
-.main_trend .trend_slide .slick-dots>li button {
-    font-family: "Chakra Petch";
-    font-weight: 700;
-    color: #aaa;
-    cursor: pointer;
-}
-
-.main_trend .trend_slide .slick-dots>li:hover button {
-    color: #444;
-}
-
-.main_trend .trend_slide .slick-dots>li~li button {
-    margin: 0 0 0 15px;
-}
-
-.main_trend .trend_slide .slick-dots>li.slick-active button {
-    color: #444;
-    border-bottom: 1px solid #bfae90;
-}
-
-
-/* main_style */
-.main_style {
-    background: #f9f9f9;
-}
-
+/* style_h */
 .main_style ul {
     display: flex;
     position: relative;
@@ -438,6 +382,205 @@
     margin: 0 0 0 15px;
 }
 
+/* main_trending_now */
+.main_trend {
+    background: #f9f9f9;
+}
+
+.main_trend .trend_slide {
+    margin: 0 -15px;
+}
+
+.main_trend .trend_slide figure {
+    padding: 0 15px 60px 15px;
+    text-align: center;
+}
+
+.main_trend .trend_slide .img_box {
+    margin: 0 0 20px 0;
+}
+
+.main_trend .trend_slide strong {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main_trend .trend_slide .slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main_trend .trend_slide .slick-dots>li {
+    display: inline-block;
+}
+
+.main_trend .trend_slide .slick-dots>li button {
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.main_trend .trend_slide .slick-dots>li:hover button {
+    color: #444;
+}
+
+.main_trend .trend_slide .slick-dots>li~li button {
+    margin: 0 0 0 15px;
+}
+
+.main_trend .trend_slide .slick-dots>li.slick-active button {
+    color: #444;
+    border-bottom: 1px solid #bfae90;
+}
+
+/* fly_to_the_sky */
+.main_fly ul {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    padding: 70px 40px;
+    background: #f0f0f0;
+}
+
+.main_fly ul::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 100%;
+    background: #ddd;
+}
+
+.main_fly ul>li {
+    flex: 1;
+}
+
+.main_fly .bag .img_box {
+    position: relative;
+    margin: 0 0 30px 0;
+}
+.main_fly .bag .img_box img {
+    transition: 0.8s;
+}
+
+.main_fly .bag .img_box:hover img {
+filter: brightness(40%);
+}
+
+.main_fly .bag .img_box span {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.main_fly .bag .img_box:hover span {
+    opacity: 1;
+}
+
+.main_fly .bag .img_box i {
+    position: absolute;
+    top: -1px;
+}
+
+.main_fly .bag strong {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.main_fly .bag span {
+    color: #bfae90;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.main_fly .bag p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* main_colombo_made_in_italy */
+.main_col {
+    position: relative;
+    background: url(../images/colombo01.jpg) no-repeat fixed top center/cover;
+    background-blend-mode: multiply;
+    background-color: #888;
+    height: 380px;
+}
+
+.main_col .txt_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    text-align: center;
+}
+
+.main_col .txt_box span {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    color: #bfae90;
+}
+
+.main_col .txt_box strong {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+.main_col .txt_box p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #ddd;
+}
+
+.main_col .btn {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 70px);
+    border-radius: 50px ;
+    background: rgba(255, 255, 255, 0.5);
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.main_col .btn:hover {
+    background: #bfae90;
+    color: #fff;
+}
+
+.main_col .btn a {
+    display: block;
+    font-size: 14px;
+    padding: 10px 40px;
+}
+
+.main_col .btn span {
+    margin: 0 6px 0 0;
+}
+
+.main_col .btn i {
+    position: absolute;
+    font-size: 16px;
+    top: 8px;
+}
+
 /* main_prem */
 .main_prem .inner {
     position: relative;
@@ -445,21 +588,22 @@
 
 .main_prem .prem_list {
     display: flex;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
+    border-left: 1px solid #eee;
 }
 
 .main_prem .prem_list>li {
     padding: 10px 40px;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    font-weight: 500;
     color: #888;
     cursor: pointer;
     transition: 0.3s;
+    border-right: 1px solid #eee;
 }
 
 .main_prem .prem_list>li.on {
-    background: #f8f8f8;
-    color: #444;
+    background: #bfae90;
+    color: #fff;
 }
 
 .main_prem .prem_wrap {
@@ -511,9 +655,11 @@
     width: 100%;
     text-align: center;
 }
+
 .main_prem .prem_r .logo_box {
     margin: 0 0 30px 0;
 }
+
 .main_prem .prem_r strong {
     display: block;
     font-weight: 500;
@@ -521,7 +667,7 @@
 }
 
 .main_prem .prem_slide .img_box {
-    margin:  0 0 20px 100px;
+    margin: 0 0 20px 100px;
 }
 
 .main_prem .prem_slide .img_box img {
@@ -534,19 +680,20 @@
     top: 0;
     transform: translate(-50%, -10px);
 }
+
 .main_prem .prem_slide .slick-dots>li {
     display: inline-block;
 }
+
 .main_prem .prem_slide .slick-dots>li button {
     font-size: 0;
     width: 100px;
     height: 6px;
     background: #ddd;
-    transition: 0.3s;
 }
 
 .main_prem .prem_slide .slick-dots>li.slick-active button {
-    background: #000;
+    background: #bfae90;
 }
 
 .main_prem .prem_slide span {
@@ -578,7 +725,6 @@
 }
 
 /* footer */
-
 .footer {
     padding: 0 0 50px 0;
     background: #eee;
@@ -587,10 +733,11 @@
 
 .footer .footer_t {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ddd;
     margin: 0 0 20px 0;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .footer .footer_t>ul {
@@ -610,9 +757,70 @@
     transform: translate(0, -50%);
     width: 1px;
     height: 12px;
-    background: red;
+    background: #ddd;
 }
 
+.footer .footer_t .family_site {
+    position: relative;
+    text-align: center;
+}
+
+.footer .footer_t .site {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .footer_t .site span {
+    display: block;
+    padding: 7px 0 7px 5px;
+    width: 135px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer .footer_t .site span:hover {
+    background: #fff;
+}
+
+.footer .footer_t .site span.on {
+    background: #fff;
+}
+
+.footer .footer_t .site span.on i {
+    transform: rotate(180deg);
+}
+
+.footer .footer_t .site ul.on {
+    display: block;
+}
+
+.footer .footer_t .site ul {
+    display: none;
+    position: absolute;
+    bottom: 28px;
+    width: 135px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.footer .footer_t .site ul li~li {
+    border-top: 1px solid #f0f0f0;
+}
+
+.footer .footer_t .site ul li a {
+    display: block;
+    line-height: 24px;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+.footer .footer_t .site ul li a:hover {
+    background: #888;
+    color: #fff;
+}
+
+/* footer_b */
 .footer .footer_b {
     display: flex;
     justify-content: space-between;
@@ -623,11 +831,22 @@
 }
 
 .footer .footer_b .info>ul {
-    margin:  0 0 15px 0;
+    margin: 0 0 15px 0;
 }
 
 .footer .footer_b .info>ul>li {
     line-height: 20px;
+}
+
+.footer .footer_b .sns i {
+    font-size: 18px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer .footer_b .sns i:hover {
+    color: #bfae90;
 }
 
 /* btn_list */
@@ -644,6 +863,7 @@
 
 .btn_list .chatbot img {
     cursor: pointer;
+    border: 1px solid #fff;
 }
 
 .btn_list .chatbot span {
@@ -688,5 +908,6 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 56px;
+    border: 1px solid #fff;
     cursor: pointer;
 }

@@ -23,7 +23,7 @@ body {
 }
 
 .sec {
-    padding: 90px 0;
+    padding: 100px 0;
 }
 
 .sec .tit {
@@ -53,11 +53,11 @@ p {
 }
 
 .footer {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .footer .st {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     color: #444;
 }
