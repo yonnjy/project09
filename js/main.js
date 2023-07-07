@@ -40,12 +40,13 @@ $(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         responsive: [
-            { breakpoint: 768,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
             }
-        }
         ]
     });
 
@@ -53,8 +54,9 @@ $(function () {
         arrows: false,
         dots: true,
         centerMode: true,
+        centerPadding: '0'
     });
-    
+
     $('.prem_list li').on('click', function (event) {
         event.preventDefault();
 
@@ -81,5 +83,5 @@ $(function () {
     $('.btn_list .to_top').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 500);
     });
-    
+
 });
