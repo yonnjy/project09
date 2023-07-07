@@ -1189,7 +1189,7 @@
     
     
     .main_prem .prem_list>li {
-        padding: 10px 29px;
+        padding: 10px 25px;
         font-size: 15px;
         border-top: 1px solid #bfae90;
         border-left: 0px solid #bfae90;
@@ -1270,7 +1270,7 @@
     }
 
     .main_prem .prem_slide .slick-dots>li button {
-        width: 61px;
+        width: 53px;
     }
 
     .main_prem .prem_slide span {
