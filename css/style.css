@@ -70,7 +70,7 @@
 .header .header_t .cart i small {
     position: absolute;
     top: 50%;
-    right: -10px;
+    right: -13px;
     transform: translate(0, -50%);
     width: 15px;
     height: 15px;
